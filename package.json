@@ -5,7 +5,7 @@
   "author": "张博 <13764813142@139.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ZhangBo-cmd/dsh-coros-badge.git"
+    "url": "git+https://github.com/ZhangBo-cmd/dsh-coros-badge.git"
   },
   "type": "module",
   "main": "lib/index.js",
