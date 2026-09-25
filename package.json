@@ -1,0 +1,45 @@
+{
+  "name": "dsh-coros-badge",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 插件：常驻显示高驰手表型号与累计运动天数，点击展开一句话点评与建议",
+  "author": "张博 <13764813142@139.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZhangBo-cmd/dsh-coros-badge.git"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "default": "./lib/index.js"
+    },
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "plugin",
+    "coros",
+    "badge"
+  ],
+  "license": "MIT"
+}

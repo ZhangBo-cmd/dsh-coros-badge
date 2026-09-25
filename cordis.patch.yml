@@ -1,0 +1,6 @@
+# dsh-coros-badge 组合包补丁层：
+# 向 profile 插入一个 Loader 行，名称指向本包（node 半边起 /coros-summary 接口，
+# 浏览器半边经 exports["./client"] 交付徽章 UI）。
+- insert:
+    - id: dsh-coros-badge
+      name: dsh-coros-badge
