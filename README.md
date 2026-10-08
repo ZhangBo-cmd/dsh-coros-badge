@@ -49,8 +49,8 @@ dsh plugin --profile web remove dsh-coros-badge
 
 本包带预构建产物、无运行时依赖、无构建脚本，可直接分发到三个平台：
 
-- **npm**：`pnpm publish --access public`（用户安装：`dsh plugin add dsh-coros-badge`）
-- **GitHub**：https://github.com/ZhangBo-cmd/dsh-coros-badge（用户安装：`dsh plugin add github:ZhangBo-cmd/dsh-coros-badge`）
+- **npm**：`pnpm publish --access public`（用户安装：`dsh plugin --profile web add dsh-coros-badge`）
+- **GitHub**：https://github.com/ZhangBo-cmd/dsh-coros-badge（用户安装：`dsh plugin --profile web add github:ZhangBo-cmd/dsh-coros-badge`）
 - **Gitee**：https://gitee.com/ZhangBo-cmd/dsh-coros-badge
 
 本地打 tarball：
