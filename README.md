@@ -22,10 +22,16 @@ DeepSeek Harness（DSH）Web UI 插件：在输入框左侧常驻一个高驰徽
 ## 安装
 
 ```sh
-dsh plugin add dsh-coros-badge
-# 或本地目录：cd dsh-coros-badge && dsh plugin add .
-# 或 tarball：dsh plugin add ./dsh-coros-badge-0.1.0.tgz
+dsh plugin --profile web add dsh-coros-badge
+# 或本地目录：cd dsh-coros-badge && dsh plugin --profile web add .
+# 或 tarball：dsh plugin --profile web add ./dsh-coros-badge-0.1.0.tgz
 ```
+
+> `--profile <name>` 是**必填**。DSH 的 `plugin` 命令本质是把参数转发给 profile 目录里的 pnpm，
+> 不带会直接报 `error: required option '--profile <name>' not specified`。
+> 用默认的网页界面就是 `--profile web`，自定义 profile 换成对应名字即可。
+
+![安装过程](coros-install.gif)
 
 重启 `dsh web` 并刷新页面，输入框左侧即出现「高驰 Logo + 手表型号 · 运动 N 天」徽章。
 
@@ -36,7 +42,7 @@ dsh plugin add dsh-coros-badge
 ## 卸载
 
 ```sh
-dsh plugin remove dsh-coros-badge
+dsh plugin --profile web remove dsh-coros-badge
 ```
 
 ## 发布 / 分发
