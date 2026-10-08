@@ -1,4 +1,7 @@
 # dsh-coros-badge
+![COROS badge in the DSH composer](coros-badge.gif)
+
+The badge sits in the composer and expands to a one-line training review.
 
 DeepSeek Harness（DSH）Web UI 插件：在输入框左侧常驻一个高驰徽章，实时展示**当前手表型号 + 累计运动天数**，点击展开**一句话点评 + 建议**。
 
